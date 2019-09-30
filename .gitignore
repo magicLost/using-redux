@@ -13,6 +13,9 @@
 
 /src/static
 
+/src/logo.svg
+/public/favicon.ico
+
 # misc
 .DS_Store
 .env.local
