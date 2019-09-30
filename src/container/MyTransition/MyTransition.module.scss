@@ -1,0 +1,36 @@
+.MyTransition{
+
+  position: relative;
+  width: 800px;
+  height: 800px;
+
+  background-color: #ffe6dc;
+
+  .Element{
+
+    position: relative;
+
+    left: 0;
+
+    width: 200px;
+    height: 200px;
+
+    border: 1px solid black;
+
+    animation: move 4s linear;
+
+  }
+
+}
+
+@keyframes move {
+  0%{
+    left: 0;
+  }
+  50%{
+    left: 400px;
+  }
+  100%{
+    left: 0;
+  }
+}

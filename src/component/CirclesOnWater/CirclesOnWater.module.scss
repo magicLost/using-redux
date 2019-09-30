@@ -1,0 +1,65 @@
+
+$duration: 0.6s;
+
+.CirclesOnWater{
+
+  //--size: 10rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  height: 15rem;
+  width: 15rem;
+  transform:  translateX(-50%) translateY(-50%);
+
+  .Circle{
+    opacity: 1;
+
+    position: absolute;
+    height: inherit;
+    width: inherit;
+    background: rgba(236, 225, 227, 0.5);
+    border-radius: 50%;
+
+    animation: animate-circle $duration cubic-bezier(.9,.24,.62,.79);//infinite
+
+    transform: scale(0);
+
+   /* transition-property: transform, opacity;
+    transition-duration: $duration;
+    transition-timing-function: cubic-bezier(.9,.24,.62,.79);*/
+
+  }
+
+/*  .Circle--Transition{
+    transform: scale(1);
+    opacity: 0;
+  }
+
+  .Circle--Animation{
+    animation: animate-circle $duration cubic-bezier(.9,.24,.62,.79);//infinite
+  }*/
+
+  .Circle:nth-of-type(1){
+    animation-delay: 0s;
+  }
+
+  .Circle:nth-of-type(2){
+    animation-delay: calc(#{$duration} / -3);
+  }
+
+  .Circle:nth-of-type(3){
+    animation-delay: calc(#{$duration} / -6);
+  }
+
+}
+
+@keyframes animate-circle {
+  from {
+    transform: scale(0);
+    opacity: 1;
+  }
+  to {
+    transform: scale(1);
+    opacity: 0;
+  }
+}

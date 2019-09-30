@@ -1,0 +1,52 @@
+.Stepper{
+
+  width: 700px;
+  margin: auto;
+  padding: 20px;
+
+  .Steps{
+
+    //height: 200px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    background-color: #fbfbfb;
+    margin: auto;
+
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+
+  .Info{
+
+    .MainInfo{
+
+      p{
+        text-align: left;
+        padding-left: 5px;
+        padding-top: 8px;
+      }
+
+    }
+
+    .Buttons{
+
+      display: flex;
+      padding-top: 8px;
+      padding-left: 5px;
+
+      align-items: center;
+
+      .Button{
+
+        margin-right: 10px;
+        padding: 5px;
+
+      }
+
+    }
+
+  }
+
+}
+

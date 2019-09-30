@@ -1,0 +1,34 @@
+.ErrorRequest{
+
+  //width: 100%;
+  //height: 100%;
+
+  padding: 30px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  .ErrorButton{
+
+    margin-top: 5px;
+
+    border: 2px solid black;
+    border-radius: 10px;
+
+    background: transparent;
+
+    font-weight: bold;
+    padding: 10px 30px;
+
+  }
+
+  .ErrorText{
+
+    font-size: 20px;
+    padding-bottom: 20px;
+
+  }
+
+}
